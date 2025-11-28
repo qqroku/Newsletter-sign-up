@@ -43,21 +43,23 @@
           <li>And much more!</li>
         </ul>
 
-        <form class="newsletter-card__form">
+        <form class="newsletter-card__form" action="#">
           <div>
             <label for="email" class="newsletter-card__form-label"
               >Email address</label
             >
             <input
+              required
               type="email"
               id="email"
               name="email"
               placeholder="email@company.com"
               class="newsletter-card__form-email"
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"
             />
           </div>
 
-          <button class="newsletter-card__form-button">
+          <button class="newsletter-card__form-button" id="form-btn">
             Subscribe to monthly newsletter
           </button>
         </form>
@@ -95,5 +97,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
