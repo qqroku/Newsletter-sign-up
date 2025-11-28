@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  <!-- Sign-up form start -->
+    <link rel="stylesheet" href="styles.css" />
 
-  Stay updated!
+    <!--* Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--* Sign-up form start -->
+    <div class="newsletter-card">
+      <!--* Left side - Content -->
+      <div class="newsletter-card__content">
+        <p class="newsletter-card__title">Stay updated!</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+        <p class="newsletter-card__message">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+        <ul class="newsletter-card__lists">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
 
-  Email address
-  email@company.com
+        <div class="newsletter-card__form">
+          <div>
+            <label for="email" class="newsletter-card__form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+              class="newsletter-card__form-email"
+            />
+          </div>
 
-  Subscribe to monthly newsletter
+          <button class="newsletter-card__form-button">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
+      <!--* Right side - Image -->
+      <div class="newsletter-card__image">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="desktop image"
+          class="newsletter-card__image-img"
+        />
+      </div>
+    </div>
+    <!--* Sign-up form end -->
 
-  <!-- Sign-up form end -->
+    <!--* Success message start -->
+    <div class="newsletter-card__success-state">
+      <img
+        src="./assets/images/icon-success.svg"
+        alt="success"
+        class="newsletter-card__success-image"
+      />
+      <p class="newsletter-card__success-title">Thanks for subscribing!</p>
+      <p class="newsletter-card__success-message">
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button class="newsletter-card__success-button">Dismiss message</button>
+    </div>
+    <!--* Success message end -->
 
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

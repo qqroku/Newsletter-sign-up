@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.newsletter-card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.newsletter-card__content {
+  flex: 1;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 20px 15px;
+  gap: 25px;
+}
+
+.newsletter-card__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.newsletter-card__message {
+  font-size: 0.7rem;
+}
+
+.newsletter-card__lists {
+  font-size: 0.7rem;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.newsletter-card__lists li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.newsletter-card__lists li::before {
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 14px;
+  background-image: url(./assets/images/icon-list.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.newsletter-card__lists li:last-child::before {
+  padding-top: 2px;
+}
+
+.newsletter-card__form {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newsletter-card__form-label,
+.newsletter-card__form-email {
+  display: block;
+}
+
+.newsletter-card__form-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.newsletter-card__form-email {
+  width: 100%;
+  padding: 8px 20px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.newsletter-card__form-email::placeholder {
+  font-size: 0.6rem;
+}
+
+.newsletter-card__form-button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.newsletter-card__form-button:hover {
+  background-color: hsl(234, 29%, 35%);
+}
+
+.newsletter-card__form-button:active {
+  background-color: hsl(234, 29%, 15%);
+}
+
+/** Right side - Image */
+
+.newsletter-card__image {
+  flex: 0 0 250px;
+  width: 250px;
+}
+
+.newsletter-card__image-img {
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.newsletter-card__success-state {
+  display: none;
+}
