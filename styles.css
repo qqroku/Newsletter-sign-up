@@ -91,14 +91,21 @@ body {
 
 .newsletter-card__form-email {
   width: 100%;
-  padding: 8px 20px;
+  padding: 7px 15px 8px;
   outline: none;
   border: 1px solid gray;
   border-radius: 5px;
+  font-size: 0.7rem;
 }
 
 .newsletter-card__form-email::placeholder {
   font-size: 0.6rem;
+}
+
+.newsletter-card__form-email:focus {
+  outline: none;
+  border-color: hsl(234, 29%, 20%);
+  box-shadow: 0 0 0 1px hsl(234, 29%, 20%);
 }
 
 .newsletter-card__form-button {
