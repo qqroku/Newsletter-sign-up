@@ -136,8 +136,9 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
