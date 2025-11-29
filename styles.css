@@ -17,7 +17,7 @@ body {
   align-items: center;
   min-height: 100vh;
   min-width: 300px;
-  padding: 0 10px;
+  padding: 20px 10px;
   gap: 20px;
 }
 
@@ -223,7 +223,7 @@ body {
   background-color: hsl(234, 29%, 20%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   body {
     min-width: 300px;
   }
@@ -259,10 +259,6 @@ body {
 
   .newsletter-card__lists li:last-child span {
     margin-top: 1px;
-  }
-
-  .newsletter-card__form-label {
-    font-size: 0.7rem;
   }
 
   .newsletter-card__form-email {
