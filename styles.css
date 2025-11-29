@@ -26,8 +26,8 @@ body {
   display: flex;
   flex-direction: row;
   padding: 15px;
-  border-radius: 10px;
-  max-width: 600px;
+  border-radius: 15px;
+  max-width: 750px;
 }
 
 .newsletter-card__content {
@@ -35,8 +35,8 @@ body {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  padding: 20px 40px 20px 15px;
-  gap: 18px;
+  padding: 20px 50px 20px 12px;
+  gap: 20px;
 }
 
 /** Top side - Mobile Image */
@@ -48,23 +48,24 @@ body {
 }
 
 .newsletter-card__title {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .newsletter-card__message {
-  font-size: 0.7rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .newsletter-card__lists {
-  font-size: 0.7rem;
+  font-size: 1rem;
   list-style-type: none;
 }
 
 .newsletter-card__lists li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 /** adds margin bottom to the first 2 li. last li not included */
@@ -99,22 +100,22 @@ body {
 }
 
 .newsletter-card__form-label {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .newsletter-card__form-email {
   width: 100%;
-  padding: 7px 15px 8px;
+  padding: 14px 15px 15px;
   outline: none;
   border: 1px solid gray;
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .newsletter-card__form-email::placeholder {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .newsletter-card__form-email:focus {
@@ -126,12 +127,12 @@ body {
 .newsletter-card__form-button {
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   font-weight: 700;
   width: 100%;
   border: none;
   border-radius: 5px;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.15s;
@@ -148,8 +149,8 @@ body {
 /** Right side - Desktop Image */
 
 .newsletter-card__image {
-  flex: 0 0 250px;
-  width: 250px;
+  flex: 0 0 300px;
+  width: 300px;
 }
 
 .newsletter-card__desktop-img {
