@@ -33,7 +33,7 @@ body {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  padding: 40px 50px 20px 15px;
+  padding: 20px 50px 20px 15px;
   gap: 18px;
 }
 
@@ -45,16 +45,16 @@ body {
 }
 
 .newsletter-card__title {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
 .newsletter-card__message {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .newsletter-card__lists {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   list-style-type: none;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .newsletter-card__form-label {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 .newsletter-card__form-email::placeholder {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .newsletter-card__form-email:focus {
@@ -123,7 +123,7 @@ body {
 .newsletter-card__form-button {
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 700;
   width: 100%;
   border: none;
