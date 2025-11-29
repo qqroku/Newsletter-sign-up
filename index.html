@@ -28,7 +28,7 @@
   </head>
   <body>
     <!--* Sign-up form start -->
-    <div class="newsletter-card">
+    <div class="newsletter-card" id="newsletter-card">
       <!--* Left side - Content -->
       <div class="newsletter-card__content">
         <p class="newsletter-card__title">Stay updated!</p>
@@ -45,9 +45,13 @@
 
         <form class="newsletter-card__form" action="#">
           <div>
-            <label for="email" class="newsletter-card__form-label"
-              >Email address</label
-            >
+            <div id="label-errorMsg">
+              <label for="email" class="newsletter-card__form-label"
+                >Email address</label
+              >
+              <p class="newsletter-card__form-errorMsg"></p>
+            </div>
+
             <input
               required
               type="email"
@@ -76,7 +80,7 @@
     <!--* Sign-up form end -->
 
     <!--* Success message start -->
-    <div class="newsletter-card__success-state">
+    <div class="newsletter-card__success-state" id="success-card">
       <img
         src="./assets/images/icon-success.svg"
         alt="success"
@@ -87,7 +91,9 @@
         A confirmation email has been sent to ash@loremcompany.com. Please open
         it and click the button inside to confirm your subscription.
       </p>
-      <button class="newsletter-card__success-button">Dismiss message</button>
+      <button class="newsletter-card__success-button" id="dismiss-btn">
+        Dismiss message
+      </button>
     </div>
     <!--* Success message end -->
 

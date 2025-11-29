@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  gap: 20px;
 }
 
 .newsletter-card {
@@ -127,7 +128,7 @@ body {
 }
 
 .newsletter-card__form-button:active {
-  background-color: hsl(234, 29%, 15%);
+  background-color: hsl(234, 29%, 20%);
 }
 
 /** Right side - Image */
@@ -151,6 +152,50 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/** Success state  */
+
 .newsletter-card__success-state {
+  background-color: hsl(0, 0%, 100%);
   display: none;
+  flex-direction: column;
+  padding: 30px 40px 30px;
+  max-width: 350px;
+  border-radius: 15px;
+  gap: 25px;
+}
+
+.newsletter-card__success-image {
+  width: 50px;
+}
+
+.newsletter-card__success-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.newsletter-card__success-message {
+  font-size: 0.75rem;
+}
+
+.newsletter-card__success-button {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  padding: 12px 0;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.newsletter-card__success-button:hover {
+  background-color: hsl(234, 29%, 35%);
+}
+
+.newsletter-card__success-button:active {
+  background-color: hsl(234, 29%, 20%);
 }
