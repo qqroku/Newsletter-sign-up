@@ -37,6 +37,13 @@ body {
   gap: 18px;
 }
 
+/** Top side - Mobile Image */
+.newsletter-card__mobile-img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
 .newsletter-card__title {
   font-size: 2.2rem;
   font-weight: 700;
@@ -49,28 +56,32 @@ body {
 .newsletter-card__lists {
   font-size: 0.7rem;
   list-style-type: none;
-  list-style-position: inside;
 }
 
+.newsletter-card__lists li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/** adds margin bottom to the first 2 li. last li not included */
 .newsletter-card__lists li:not(:last-child) {
   margin-bottom: 8px;
 }
 
 .newsletter-card__lists li::before {
   content: "";
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  margin-right: 14px;
+  display: block;
+  min-width: 18px;
+  height: 18px;
   background-image: url(./assets/images/icon-list.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  vertical-align: middle;
 }
 
-.newsletter-card__lists li:last-child::before {
+/* .newsletter-card__lists li:last-child::before {
   padding-top: 2px;
-}
+} */
 
 .newsletter-card__form {
   /* border: 1px solid black; */
@@ -131,14 +142,14 @@ body {
   background-color: hsl(234, 29%, 20%);
 }
 
-/** Right side - Image */
+/** Right side - Desktop Image */
 
 .newsletter-card__image {
   flex: 0 0 250px;
   width: 250px;
 }
 
-.newsletter-card__image-img {
+.newsletter-card__desktop-img {
   width: 100%;
   height: 100%;
 }
@@ -198,4 +209,59 @@ body {
 
 .newsletter-card__success-button:active {
   background-color: hsl(234, 29%, 20%);
+}
+
+@media (max-width: 500px) {
+  .newsletter-card {
+    flex-direction: column;
+    max-width: 300px;
+    padding: 0 0 15px;
+  }
+
+  .newsletter-card__content {
+    padding: 10px 20px;
+  }
+
+  .newsletter-card__title {
+    margin-top: 8px;
+  }
+
+  .newsletter-card__message {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-card__form-label {
+    font-size: 0.7rem;
+  }
+
+  .newsletter-card__form-email {
+    padding: 8px 15px 9px;
+  }
+
+  .newsletter-card__lists li {
+    font-size: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .newsletter-card__lists li:last-child span {
+    padding-top: 1px;
+  }
+
+  .newsletter-card__image {
+    width: 100%;
+    display: none;
+  }
+
+  .newsletter-card__image-img {
+    display: none;
+  }
+
+  .newsletter-card__mobile {
+    margin: -10px -20px 0 -20px;
+  }
+
+  .newsletter-card__mobile-img {
+    display: block;
+    object-fit: cover;
+  }
 }
