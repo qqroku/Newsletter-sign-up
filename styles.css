@@ -230,7 +230,7 @@ body {
 
   .newsletter-card {
     flex-direction: column;
-    max-width: 300px;
+    max-width: 350px;
     padding: 0 0 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -245,7 +245,20 @@ body {
   }
 
   .newsletter-card__message {
-    font-size: 0.85rem;
+    font-size: 1rem;
+  }
+
+  .newsletter-card__lists li {
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+
+  .newsletter-card__lists li::before {
+    margin-top: 2px;
+  }
+
+  .newsletter-card__lists li:last-child span {
+    margin-top: 1px;
   }
 
   .newsletter-card__form-label {
@@ -254,15 +267,6 @@ body {
 
   .newsletter-card__form-email {
     padding: 8px 15px 9px;
-  }
-
-  .newsletter-card__lists li {
-    font-size: 0.8rem;
-    align-items: flex-start;
-  }
-
-  .newsletter-card__lists li:last-child span {
-    padding-top: 1px;
   }
 
   .newsletter-card__image {
