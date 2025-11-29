@@ -17,6 +17,7 @@ body {
   align-items: center;
   min-height: 100vh;
   gap: 20px;
+  padding: 0 10px;
 }
 
 .newsletter-card {
